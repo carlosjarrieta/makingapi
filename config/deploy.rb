@@ -3,13 +3,13 @@ lock "~> 3.10.0"
 
 set :application, 'makingapi'
 set :scm, :git
-set :repo_url, 'ssh://git@bitbucket.org:22/carlosjarrieta/litompresosapi.git'
+set :repo_url, 'ssh://git@github.com:22/carlosjarrieta/makingapi.git'
 set :branch, "master"
 set :deploy_via, :copy
-set :user, 'carrieta'
+set :user, 'deploy'
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/carrieta/www/cuposapp'
+set :deploy_to, '/home/deploy/www/makingapps/api'
 set :linked_files, %w{config/database.yml}
 #append :linked_files, 'config/master.key'
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
