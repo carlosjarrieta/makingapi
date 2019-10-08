@@ -1,5 +1,6 @@
 class PersonasController < ApplicationController
   before_action :set_persona, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user
 
   # GET /personas
   # GET /personas.json
